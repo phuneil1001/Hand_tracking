@@ -10,6 +10,9 @@ cap = cv2.VideoCapture(0)
 
 while True:
     success, img = cap.read()
+    if not success or img is None:
+        print("Không lấy được hình ảnh từ camera. Kiểm tra lại thiết bị hoặc cấu hình Docker.")
+        break
     img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     result = hands.process(img_rgb)
 

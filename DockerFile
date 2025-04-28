@@ -1,0 +1,14 @@
+# Sử dụng image pytorch có hỗ trợ CUDA
+FROM pytorch/pytorch:2.6.0-cuda11.8-cudnn9-runtime
+
+# Đặt thư mục làm việc
+WORKDIR /workspace
+
+# Sao chép toàn bộ mã nguồn vào container
+COPY . /workspace
+
+# Cài đặt ffmpeg để hỗ trợ xử lý video/camera cho OpenCV
+RUN apt-get update && apt-get install -y ffmpeg
+
+# Cài đặt các thư viện Python cần thiết
+RUN pip install --no-cache-dir -r requirement.txt
