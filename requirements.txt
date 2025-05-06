@@ -1,6 +1,7 @@
 streamlit
 streamlit-webrtc
 opencv-python-headless
+opencv-python
 mediapipe
 numpy
-pyav==10.0.0
+pyav
