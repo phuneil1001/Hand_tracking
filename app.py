@@ -8,11 +8,11 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer, VideoProcessorBase, RTCConfiguration
 import av
-import cv2
 import mediapipe as mp
 import numpy as np
 from collections import deque, Counter
 import math
+import cv2
 
 # Buffer để làm mượt trạng thái
 MODE_BUFFER_SIZE = 10
