@@ -1,6 +1,6 @@
-streamlit
+streamlit==1.45.0
 streamlit-webrtc==0.46.0
 opencv-python-headless==4.7.0.72
-mediapipe==0.10.9
-numpy
+mediapipe==0.10.14
+numpy==1.26.4
 pyav==10.0.0
